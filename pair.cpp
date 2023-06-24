@@ -3,7 +3,15 @@ using namespace std;
 
 int main()
 {
-	pair<int,string> p = {1,"jaffar"};
+	pair<int,string> p = {2,"jaffar"};
+	vector<pair<int,string>> v = {
+		{2,"jaffar2"},
+		{1,"jaffar"},
+	};
 
-	cout << p.first << p.second ;
+	cout << v[0].second;
+
+	sort(v.begin(),v.end());
+
+	cout << v[0].second;
 }
